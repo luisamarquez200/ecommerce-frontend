@@ -1,38 +1,31 @@
-# create-svelte
+Para ejecutar el frontend de tu aplicación localmente, sigue estos pasos:
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+1. Instalar Node.js
+Asegúrate de tener Node.js instalado en tu máquina. Puedes verificarlo ejecutando el siguiente comando en tu terminal:
 
-## Creating a project
+node -v
+Si no lo tienes instalado, descárgalo e instálalo desde la página oficial.
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. Clonar el Repositorio
+Si aún no has clonado tu repositorio, utiliza el siguiente comando, reemplazando <https://github.com/luisamarquez200/ecommerce-frontend.git> con la URL de tu repositorio en GitHub:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+bash
+Copiar código
+git clone <https://github.com/luisamarquez200/ecommerce-frontend.git>
+Luego navega al directorio del proyecto:
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+3. Instalar Dependencias
+Dentro del directorio del proyecto, instala las dependencias necesarias utilizando el siguiente comando:
 
-## Developing
+npm install
+Esto descargará e instalará todos los paquetes necesarios que están especificados en el archivo package.json.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+5. Configurar el Entorno
 
-```bash
+API_URL=http://localhost:4000/api
+
+5. Ejecutar el Servidor de Desarrollo
+Para iniciar el servidor de desarrollo y ejecutar la aplicación, utiliza el siguiente comando:
+
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Esto debería iniciar el servidor de desarrollo, normalmente en http://localhost:5173 o un puerto similar, dependiendo de tu configuración.
